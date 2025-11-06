@@ -1,0 +1,2 @@
+arcade~=3.3.3
+termcolor~=3.2.0
