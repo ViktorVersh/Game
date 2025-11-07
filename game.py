@@ -5,12 +5,12 @@ import random
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 SCREEN_TITLE = "Ping Pong, управляем клавишами W и S "
-BALL_RADIUS = 10
-PADDLE_WIDTH = 10
-PADDLE_HEIGHT = 100
+BALL_RADIUS = 16
+PADDLE_WIDTH = 15
+PADDLE_HEIGHT = 120
 PADDLE_SPEED = 8
-BALL_SPEED_X = 5
-BALL_SPEED_Y = 4
+BALL_SPEED_X = 6
+BALL_SPEED_Y = 5
 SCORE_TO_WIN = 5
 
 
@@ -83,7 +83,7 @@ class PingPong(arcade.Window):
             x=SCREEN_WIDTH // 4,
             y=SCREEN_HEIGHT - 50,
             color=arcade.color.BLUE,
-            font_size=36,
+            font_size=40,
             anchor_x="center"
         )
 
@@ -92,7 +92,7 @@ class PingPong(arcade.Window):
             x=3 * SCREEN_WIDTH // 4,
             y=SCREEN_HEIGHT - 50,
             color=arcade.color.RED,
-            font_size=36,
+            font_size=40,
             anchor_x="center"
         )
 
@@ -111,7 +111,7 @@ class PingPong(arcade.Window):
             text="Press R to restart",
             x=SCREEN_WIDTH // 2,
             y=SCREEN_HEIGHT // 2 - 60,
-            color=arcade.color.WHITE,
+            color=arcade.color.BRIGHT_LILAC,
             font_size=24,
             anchor_x="center",
             anchor_y="center"
@@ -131,7 +131,7 @@ class PingPong(arcade.Window):
             arcade.draw_line(
                 SCREEN_WIDTH // 2, i,
                 SCREEN_WIDTH // 2, i + 10,
-                arcade.color.WHITE, 2
+                arcade.color.BRIGHT_LILAC, 2
             )
 
         # Рисуем объекты
